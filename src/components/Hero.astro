@@ -1,25 +1,49 @@
 ---
-import Navbar from "./Nav.astro"
+import Nav from "./Nav.astro"
 import fundo from '../imagens/Image.png';
+import book from '../imagens/Book.png';
+import ouija from '../imagens/Ouija.png';
+import ball from '../imagens/Ball.png';
 ---
 
 <div
 style={{ backgroundImage: `url(${fundo.src})`,  backgroundSize: 'cover', 
 backgroundPosition: 'center', 
 backgroundRepeat: 'no-repeat' }}>
-<Navbar/>
+<div class="p-10">
+<Nav/>
 </div>
 
   <div class="hero  min-h-screen text-center ">
     <div class="max-w-lg">
-
+        
       <h1 class="mb-5 text-4xl text-white font-bold">Desperte a sua imaginação e explore novos mundos</h1>
       <p class="mb-5 text-white">
         Junte-se ao clube de assinatura Encantos Literários e descubra maravilhas e aventuras a cada página
       </p>
-
+     
     </div>
 
   </div>
 
+
+
+
+</div>
+<div class="hero  text-center mt-20 mb-40">
+  <div  class="max-w-screen-xl">
+
+    <div class="flex justify-center">
+    <img class="" src={book.src}/>
+  </div>
+    <h2 class="mb-5 text-2xl text-white ">Receba todo mês um livro surpresa do seu tema favorito, acompanhado de brindes exclusivos que tornarão a sua experiência literária encantadora</h2>
+    
+   <div class="float-start">
+    <img src={ouija.src}/>
+   </div>
+   <div class="float-end">
+    <img src={ball.src}/>
+   </div>
+  </div>
+</div>
 </div>
