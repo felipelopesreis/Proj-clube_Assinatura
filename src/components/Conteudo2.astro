@@ -1,0 +1,49 @@
+---
+import table from '../imagens/Pricing_Table.png'
+import fundo from '../imagens/book-trace-background.png'
+import footer from '../imagens/Brand.png'
+
+---
+
+
+<section class="min-h-screen pt-10">
+
+    <div class="flex flex-col pt-40">
+        <h1 class="text-center text-3xl text-white">Assinatura</h1>
+    <h1 class="text-center text-3xl text-white">Encantos Literários</h1>
+    </div>
+
+    <div class="flex justify-center mt-20">
+        <img src={table.src}/>
+    </div>
+
+</section>
+
+
+<section class="min-h-screen pt-10 relative">
+
+
+    <div class="absolute bottom-0 left-0 w-full" >
+        <img src={fundo.src} class="w-full"/>
+
+        <div class="absolute bottom-0 left-10 pb-8">
+            <img class="w-60" src={footer.src} />
+        </div>
+
+        <div class="absolute bottom-0 right-40 pb-8 text-white">
+            <div class="flex flex-col">
+            <h2 class="text-2xl text-white">Conteúdos</h2>
+            <p >Kits passados</p>
+            <p>Clube de membros</p>
+            <p>Blog</p>
+        </div>
+        <div class="flex flex-col">
+            <h2 class="text-2xl text-white">Ajuda</h2>
+            <p >Central de ajuda</p>
+            <p>Regulamentos</p>
+            <p>Suporte</p>
+        </div>
+        </div>
+    </div>
+
+</section>
